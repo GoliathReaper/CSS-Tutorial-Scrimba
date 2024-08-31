@@ -1,0 +1,28 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background: black;
+}
+
+:root {
+    --white: #FFFFFF;
+    --red: #BC022C;
+    --flag-height: 200px;
+}
+
+.flag-japan {
+    margin: 10px auto;
+    width: calc(var(--flag-height) * 3 / 2);
+    height: var(--flag-height);
+    background: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    width: calc(var(--flag-height) * 3  / 5);
+    height: calc(var(--flag-height) * 3  / 5);
+    border-radius: 50%;
+    background-color: var(--red);
+}

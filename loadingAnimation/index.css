@@ -1,0 +1,32 @@
+body, html {
+  margin: 0;
+} 
+
+:root {
+  --spinner: #f3f3f3;
+  --spinner-active: purple;
+}
+
+.container {
+  margin: 100px auto;
+  height: 100px;
+  width: 100px;
+  /* background-color: var(--spinner); */
+  /* border-radius: 50%; */
+}
+
+.loader {
+  height: 60px;
+  width: 60px;
+  border: 10px solid;
+  border-color: var(--spinner);
+  border-style: solid;
+  border-top-color: var(--spinner-active);
+  border-radius: 50%;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

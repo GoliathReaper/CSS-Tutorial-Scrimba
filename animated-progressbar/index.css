@@ -1,0 +1,57 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --progressbar-bg: lightgrey;
+    --start: red;
+    --middle: blue;
+    --finish: green;
+} 
+
+.container {
+    margin: 200px auto;
+    width: 400px;
+    /* border-radius: 10px; */
+}
+
+.progress-bar {
+    background: grey;
+    height: 30px;
+    width: 400px;
+    border-radius: 15px;
+}
+
+.progress-status{
+    background: red;
+    height: 30px;
+    width: 40px;
+    border-radius: 15px;
+    animation-name: loading;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+
+
+@keyframes loading {
+    0% {
+        background-color: red;
+        width: 0%;
+    }
+
+    50% {
+        background-color: green;
+        width: 50%;
+    }
+
+    75% {
+        background-color: blue;
+        width: 100%;
+    }
+    100% {
+        background-color: blue;
+        width: 100%;
+    }
+}
