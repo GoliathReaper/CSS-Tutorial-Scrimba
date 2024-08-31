@@ -1,0 +1,22 @@
+p {
+  line-height: 1.5em;
+} 
+
+.post {
+  border-radius: 1em;
+  height: auto;
+  padding: 1em;
+  background-color: rgb(189, 186, 186);
+  margin: 20px;
+}
+
+.spoiler {
+  background: black;
+  color: black;
+  transition: 1s ease-in;
+}
+
+.spoiler:hover {
+  background: none;
+  cursor: pointer;
+}

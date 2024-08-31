@@ -1,0 +1,35 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: gray;
+}
+
+:root {
+    --black: #000000;
+    --red: #DE0002;
+    --yellow: #FFCE00;
+    --flag-height: 150px;
+}
+
+.flag-germany {
+    height: var(--flag-height);
+    width: calc(var(--flag-height) * 5 / 3);
+    display: grid;
+
+}
+
+.stripe {
+    /* height: 50px;
+    width: 100%; */
+}
+.black {
+    background-color: var(--black);
+}
+
+.red {
+    background-color: var(--red);
+}
+
+.yellow {
+    background-color: var(--yellow);
+}
